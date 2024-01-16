@@ -1,0 +1,70 @@
+.controls_items {
+    width: 100%;
+    padding: 0 30px;
+    min-height: 80px;
+    background: white;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.175);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .section {
+        width: 470px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .play_pause_box {
+            width: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .play_pause {
+                margin: 5px 0 0 5px;
+            }
+        }
+
+        .icon {
+            font-size: 25px;
+        }
+
+        .volume_icons {
+            width: 0px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .icon {
+                position: absolute;
+
+                &:nth-child(1) {
+                    opacity: 1;
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+            }
+        }
+
+        .volume_input {
+            width: 150px;
+
+            .input {
+                width: 100%;
+            }
+        }
+
+        .duration {
+            width: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &:nth-child(2) {
+            width: 70px;
+        }
+    }
+}
